@@ -46,4 +46,10 @@ public class HyperionMap implements RobotMap {
         return new LiftMap() {
         };
     }
+    
+     @Override
+    public LEDMap getLEDMap() {
+        return new LEDMap() {
+        };
+    }
 }

@@ -43,4 +43,9 @@ public interface RobotMap {
     }
 
     public LiftMap getLiftMap();
+
+    public interface LEDMap {
+    }
+
+    public LEDMap getLEDMap();
 }

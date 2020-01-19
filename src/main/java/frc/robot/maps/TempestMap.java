@@ -5,6 +5,7 @@ import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 import edu.wpi.first.wpilibj.SpeedControllerGroup;
 import edu.wpi.first.wpilibj.Talon;
+import frc.robot.subsystems.LED;
 
 public class TempestMap implements RobotMap {
 
@@ -51,6 +52,12 @@ public class TempestMap implements RobotMap {
     @Override
     public LiftMap getLiftMap() {
         return new LiftMap() {
+        };
+    }
+
+    @Override
+    public LEDMap getLEDMap() {
+        return new LEDMap() {
         };
     }
 }
