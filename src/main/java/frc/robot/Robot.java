@@ -29,6 +29,7 @@ import frc.robot.subsystems.Drive;
 import frc.robot.subsystems.Intake;
 import frc.robot.subsystems.Lift;
 import frc.robot.subsystems.Shooter;
+import io.github.oblarg.oblog.Logger;
 
 /**
  * The VM is configured to automatically run this class, and to call the
@@ -62,6 +63,8 @@ public class Robot extends TimedRobot {
      */
     @Override
     public void robotInit() {
+        Logger.configureLoggingAndConfig(this, false);
+        Logger.updateEntries();
         configureButtonBindings();
 
         nameEntry.setPersistent();
